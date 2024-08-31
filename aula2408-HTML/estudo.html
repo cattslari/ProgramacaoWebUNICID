@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Author: A.N. Author, Illustrator: P. Picture, Category: Books, Price:  £9.24, Length: 784 pages">
     <title>Larissa S e Vinicius N</title>
     <link rel="icon" href="https://img.icons8.com/?size=100&id=11581&format=png&color=000000">
     <style>
@@ -43,10 +44,10 @@
         </h4>
     </p>
 
-    <p><a href="#C1">Ir para o capitulo 1</a></p>
-    <p><a href="#C2">Ir para o capitulo 2</a></p>
-    <p><a href="#C3">Ir para o capitulo 3</a></p>
-    <p><a href="#C4">Ir para o capitulo 4</a></p>
+    <p><a href="#C1">Ir para Filmes e Séries</a></p>
+    <p><a href="#C2">Ir para Músicas</a></p>
+    <p><a href="#C3">Ir para Pratos</a></p>
+    <p><a href="#C4">Ir para Lugares</a></p>
 
     <!--Final dos detalhes dos participantes-->
 
@@ -90,19 +91,9 @@
         Email:
         <a href="">vinicius.nascimento00@cs.unicid.edu.br</a>
         </address>
-        
-        <h3 id="C1">CAPITULO 1</h3>
-        <p>Esse seria o capitulo 1</p>
+      
 
-        <h3 id="C2">CAPITULO 2</h3>
-        <p>Esse seria o capitulo 2</p>
-
-        <h3 id="C3">CAPITULO 3</h3>
-        <p>Esse seria o capitulo 3</p>
-
-        <h3 id="C4">CAPITULO 4</h3>
-        <p>Esse seria o capitulo 4</p>
-
+        <h2 id="C1"> 10 Filmes e Séries prediletos</h2>
         <table>
             <tr>
               <th>Nome da obra</th>
@@ -136,20 +127,86 @@
             </tr>
           </table>
 
-          <h2>10 músicas prediletas</h2>
+          <h2 id="C2"> 10 músicas prediletas</h2>
 
 <ul>
   <li>Love Generation</li>
   <li>Infinity 2008</li>
   <li>Baby don't hurt me</li>
   <li>Destination Calabria</li>
-  <li>Baby don't hurt me</li>
-  <li>Baby don't hurt me</li>
-  <li>Baby don't hurt me</li>
-  <li>Baby don't hurt me</li>
-  <li>Baby don't hurt me</li>
-  <li>Baby don't hurt me</li>
+  <li>Paradise</li>
+  <li>Uma criança com seu olhar</li>
+  <li>Dona do Meu Pensamento</li>
+  <li>Tudo sobre você</li>
+  <li>i don't know why</li>
+  <li>Viva la vida</li>
 </ul>  
 
+<h2 id="C3">10 pratos predilétos</h2>
+
+
+<ul>
+  <li>Comida Japonesa</li>
+  <li>Feijoada</li>
+  <li>Pizza</li>
+  <li>Hamburguer</li>
+  <li>Strogonoff</li>
+  <li>Macarrão</li>
+  <li>Lasanha</li>
+  <li>Nhoque</li>
+  <li>Panqueca</li>
+  <li>Torta</li>
+</ul> 
+
+<h2 id="C4">10 Lugares no mundo</h2>
+
+<div>
+<ul>
+  <li>NY</li>
+  <li>Disney</li>
+  <li>Grécia</li>
+  <li>Itália</li>
+  <li>Cancun</li>
+  <li>Argentina</li>
+  <li>Chapada dos Veaderos</li>
+  <li>Rio de Janeiro</li>
+  <li>Gramado</li>
+  <li>Chile</li>
+</ul> 
+</div>
+
+<form>
+  <label for="fname">Nome:</label><br>
+  <input type="text" id="fname" name="fname"><br> <br>
+  <label for="message">Estilos musicais preferidos, até 5:</label><br>
+  <textarea name="message" rows="10" cols="30">
+  </textarea><br>
+  <label for="datemax">Data de Nascimento</label> <br>
+  <input type="date" id="datemax" name="datemax" max="2006-08-31" ><br><br>
+  <label for="email">Email:</label> <br>
+  <input type="email" id="email"> <br>
+  <label for="fuf">UF de nascimento:</label><br>
+  <input type="text" id="fuf" name="fuf"><br> 
+  <label for="ftelefone">Telefone:</label><br>
+  <input type="text" id="telefone" name="telefone"><br> <br>
+  <p>Tamanho do pé: <output id="valor"></output></p>
+  <input type="range" id="tamanhoPe" name="Tamanho" min="32" max="46">
+  
+  <br><br>
+  <label for="pwd">Senha:</label><br>
+  <input type="password" id="pwd" name="pwd"> <br> 
+  <input type="submit" value="Submit">
+  <input type="reset" value="Reset">
+</form>
+
 </body>
+
+<script>
+  const value = document.querySelector("#valor");
+const input = document.querySelector("#tamanhoPe");
+value.textContent = input.value;
+input.addEventListener("input", (event) => {
+  value.textContent = event.target.value;
+});
+</script>
 </html>
