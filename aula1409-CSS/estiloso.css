@@ -1,0 +1,58 @@
+* {
+    background-color: linen;
+    color: midnightblue;
+    font-family: 'noto sans', sans-serif; font-size: 1.0125em;
+}
+
+article, aside {
+    margin: 8px;
+    padding: 8px;
+    background-color: lightcyan;
+}
+
+article {
+    border: 2px solid;
+}
+
+footer div {
+    padding: 13px; margin: 8px;
+    background-color: indigo;
+}
+nav{
+
+    width: 21%;
+}
+header{
+    width: 100%; border: 1px groove cornsilk; padding: 8px;
+    margin: 8px; outline: 8px solid cornflowerblue;
+}
+section.secopres p{
+    letter-spacing: 1px;
+}
+h2{
+    text-shadow: 2px 2px 5px mediumvioletred;
+}
+h3,h4{
+    text-align: center;
+}
+.principal{
+    font-weight: bold;    
+}
+header, h1, h2{
+    background-color: deepskyblue; font-size: 1.25em;
+}
+#rodape1 {
+    font-size: 1.125em; font-weight: bolder;
+}
+#rodape2 {
+    text-align: center; font-size: 0.625em;
+}
+.local {
+    font-style: italic;
+}
+a:link{
+    text-decoration: none;
+}
+a:hover{
+    font-weight: bolder;
+}
